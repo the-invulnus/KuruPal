@@ -7,7 +7,7 @@ src-tauri/binaries/market-data-*
 __pycache__/
 
 # Local releases and installers (publish separately when requested)
-releases/
+/releases/
 *.zip
 *.dmg
 *.app/
