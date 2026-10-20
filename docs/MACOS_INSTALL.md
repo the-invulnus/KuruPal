@@ -26,4 +26,4 @@ ZIP 与 DMG 都不能替代签名、公证。正式面向普通用户发布且�
 
 ## Codex 插件
 
-桌面应用和 Codex 插件是两个包。需要任务联动与自然语言设置时，再安装 `KuruPal-Codex-Installer-<版本>.zip`；完整流程见项目根 README。插件仍需 Python 3。升级插件后刷新 Codex 会话，Hook 信任由用户在客户端审阅，不能由安装脚本代替。
+桌面应用和 Codex 插件是两个包。需要任务联动与自然语言设置时，再安装 `KuruPal-Codex-Installer-<版本>.zip`；完整流程见项目根 README。插件 ID 为 `kurupal@kurupal`，仍需 Python 3。安装后即可生效，无需重启 Codex；Hook 信任由用户在客户端审阅，不能由安装脚本代替。

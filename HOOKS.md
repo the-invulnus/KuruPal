@@ -1,4 +1,8 @@
-## Hook 故障隔离（插件0.1.4）
+## KuruPal 插件
+
+当前插件名、市场名和 skill 名均为 `kurupal`，完整 ID 为 `kurupal@kurupal`（插件 0.1.5）。安装与旧版迁移见 [插件说明](codex-plugin-distribution/README.md)。安装后即可生效，无需重启 Codex；自动 Hook 仍由用户审阅信任，已关闭的 Hook 保持关闭。
+
+## Hook 故障隔离（0.1.4 起）
 
 六类装饰性 Hook 统一使用 hooks.json 中的内联 POSIX shell 入口，而不是直接执行版本目录中的脚本：
 
@@ -7,7 +11,7 @@
 - 所有脚本 stdout/stderr 被隔离，外层命令最终 exit 0；Python缺文件常见的退出码2不会再被误认为 Codex 阻断决定，异常文本不会引发Stop反馈循环。
 - 故障只丢弃这次桌宠通知，不替 Codex 作批准/拒绝决定，不影响其他插件的安全 Hook。设置 skill 的显式命令仍如实报错，不隐藏配置失败。
 - 当前发行平台为 macOS arm64，入口依赖 POSIX shell 和 Python signal.alarm，Windows未支持；不能直接复制过去声称兼容。
-- 保护只能作用于新版入口。旧会话仍持有0.1.3或更早命令时，先关闭旧 Hook、更新插件、完全重启 Codex，再由用户审阅新版 Hook。不要用新安装成功推断旧会话已获修复。
+- 保护只能作用于新版入口。旧会话仍持有0.1.3或更早命令时，先关闭旧 Hook，并保留旧缓存路径；不要用新安装成功推断旧会话已获修复。
 - 保护范围是我们启动的通知脚本；宿主自身错误、shell无法启动或系统级故障不在插件可保证的范围内。
 
 验证：精确执行分发 hooks.json 的命令，覆盖缺目录、缺Python、语法错误、PermissionError、exit 2、伪造block输出、卡住和正常交付；6项入口测试及5项原桥接测试通过。只生成新版分发包，保持用户关闭的 Hook 状态，不在当前会话重新安装/信任插件。
@@ -22,11 +26,11 @@
 
 ## Codex插件安装（新增）
 
-已提供原生Hook插件，见codex-plugin-distribution/README.md。安装包为releases/MarketPet-Codex-Installer-0.1.0.zip。本机已安装启用market-pet@market-pet-local；还需用户在Codex中审阅信任Hook，CLI入口为/hooks。不能把“已安装”当作“Hook已信任”。下方shell脚本仍可单独使用。
+已提供原生 Hook 插件，见 codex-plugin-distribution/README.md。安装包为 `KuruPal-Codex-Installer-0.1.5.zip`，ID 为 `kurupal@kurupal`；还需用户在 Codex 中审阅信任 Hook，CLI 入口为 /hooks。不能把“已安装”当作“Hook已信任”。下方 shell 脚本仍可单独使用。
 
 # Agent Hook 接口（0.3.0）
 
-启动 Market Pet 后，外部 Agent 的 Hook 可调用随包脚本：
+启动 KuruPal 后，外部 Agent 的 Hook 可调用随包脚本：
 
 ```sh
 /path/to/agent-hook.sh task_started

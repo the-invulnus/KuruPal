@@ -5,7 +5,7 @@ import sys
 import tempfile
 import unittest
 
-SCRIPTS = Path(__file__).resolve().parents[1] / 'codex-plugin-distribution/plugins/market-pet/scripts'
+SCRIPTS = Path(__file__).resolve().parents[1] / 'codex-plugin-distribution/plugins/kurupal/scripts'
 sys.path.insert(0, str(SCRIPTS))
 spec = importlib.util.spec_from_file_location('pet_settings', SCRIPTS / 'settings.py')
 settings = importlib.util.module_from_spec(spec)

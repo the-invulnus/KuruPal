@@ -1,14 +1,14 @@
 {
-  "name": "market-pet-local",
+  "name": "kurupal",
   "interface": {
     "displayName": "KuruPal Plugins"
   },
   "plugins": [
     {
-      "name": "market-pet",
+      "name": "kurupal",
       "source": {
         "source": "local",
-        "path": "./plugins/market-pet"
+        "path": "./plugins/kurupal"
       },
       "policy": {
         "installation": "AVAILABLE",

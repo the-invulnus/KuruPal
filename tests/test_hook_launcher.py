@@ -7,7 +7,7 @@ import tempfile
 import time
 import unittest
 
-PLUGIN = Path(__file__).resolve().parents[1] / 'codex-plugin-distribution/plugins/market-pet'
+PLUGIN = Path(__file__).resolve().parents[1] / 'codex-plugin-distribution/plugins/kurupal'
 HOOKS = json.loads((PLUGIN/'hooks/hooks.json').read_text())['hooks']
 COMMAND = HOOKS['PreToolUse'][0]['hooks'][0]['command']
 

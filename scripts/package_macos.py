@@ -18,7 +18,7 @@ def main():
     if sys.platform != 'darwin':
         raise SystemExit('Run on macOS after npm run bundle -- --bundles app')
     version = json.loads((ROOT/'src-tauri/tauri.conf.json').read_text())['version']
-    plugin = ROOT/'codex-plugin-distribution/plugins/market-pet'
+    plugin = ROOT/'codex-plugin-distribution/plugins/kurupal'
     plugin_version = json.loads((plugin/'.codex-plugin/plugin.json').read_text())['version']
     source = ROOT/'src-tauri/target/release/bundle/macos/KuruPal.app'
     info = plistlib.loads((source/'Contents/Info.plist').read_bytes())

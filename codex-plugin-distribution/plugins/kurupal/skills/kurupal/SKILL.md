@@ -1,5 +1,5 @@
 ---
-name: market-pet
+name: kurupal
 description: 设置 KuruPal 桌宠大小、查看或增删关注股票列表；诊断桌宠连接或发送已确认的任务反馈。Use when the user asks to configure the pet size or watched stocks, or test its connection.
 ---
 

@@ -6,7 +6,7 @@ import tempfile
 import unittest
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-PLUGIN=ROOT/'codex-plugin-distribution/plugins/market-pet'
+PLUGIN=ROOT/'codex-plugin-distribution/plugins/kurupal'
 spec=importlib.util.spec_from_file_location('bridge',PLUGIN/'scripts/bridge.py')
 bridge=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(bridge)
@@ -38,7 +38,16 @@ class BridgeTests(unittest.TestCase):
    self.assertNotIn('secret',logs);self.assertNotIn('private-session',logs)
  def test_manifest_and_hooks(self):
   manifest=json.loads((PLUGIN/'.codex-plugin/plugin.json').read_text())
-  self.assertEqual(manifest['name'],'market-pet')
+  self.assertEqual(manifest['name'],'kurupal')
+  marketplace=json.loads((ROOT/'codex-plugin-distribution/.agents/plugins/marketplace.json').read_text())
+  self.assertEqual(marketplace['name'],'kurupal')
+  entry=marketplace['plugins'][0]
+  self.assertEqual(entry['name'],manifest['name'])
+  self.assertEqual((ROOT/'codex-plugin-distribution'/entry['source']['path']).resolve(),PLUGIN)
+  skill=PLUGIN/'skills/kurupal/SKILL.md'
+  self.assertIn('\nname: kurupal\n',skill.read_text())
+  self.assertTrue((skill.parent/'../../scripts/settings.py').resolve().is_file())
+  self.assertTrue((skill.parent/'../../scripts/bridge.py').resolve().is_file())
   hooks=json.loads((PLUGIN/'hooks/hooks.json').read_text())['hooks']
   self.assertEqual(set(hooks),{'UserPromptSubmit','PreToolUse','PostToolUse','PermissionRequest','Stop','Interrupt'})
   for event,groups in hooks.items():
