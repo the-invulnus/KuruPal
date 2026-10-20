@@ -33,8 +33,8 @@
 1. **检查环境。** 确认系统、芯片架构、agent 客户端及已有安装；不匹配时转到下一节。保留已有桌宠设置和关注股票。
 2. **下载并校验。** 从 [GitHub Releases](https://github.com/the-invulnus/KuruPal/releases/latest) 获取桌面 ZIP、Codex 插件 ZIP 和 `SHA256SUMS.txt`，核对校验和。使用实际存在的附件，不猜测文件名或下载地址。
 3. **先启动桌面应用。** 将桌面 ZIP 解压到准备长期保留的目录，用 `open` 直接启动其中的 `KuruPal.app` 并确认进程正常。更新前退出旧应用，保留用户设置；若系统拦截，引导用户完成系统安全确认。
-4. **再安装 Codex 插件。** 确保 `python3` 和支持 `plugin` 命令的 Codex CLI 可用。将插件 ZIP 解压到持久目录，执行其中的 `sh install.command`，并保留该目录供后续更新。插件显示名为 KuruPal，兼容 ID 为 `market-pet@market-pet-local`。
-5. **验证并交付。** 从实际安装目录执行 `python3 <installedPath>/scripts/bridge.py --status` 和 `python3 <installedPath>/scripts/settings.py`，确认连接与设置可读。更新插件后提醒用户重启 Codex，再到 **Plugins → KuruPal → Hooks → Review / Trust all** 审阅；聊天输入框的 **Review hooks** 也可使用。不要代写信任配置；用户已关闭 Hook 时保持关闭。
+4. **再安装 Codex 插件。** 确保 `python3` 和支持 `plugin` 命令的 Codex CLI 可用。将插件 ZIP 解压到持久目录，执行其中的 `sh install.command`，并保留该目录供后续更新。插件显示名为 KuruPal，兼容 ID 为 `market-pet@market-pet-local`。安装后即可生效，无需重启 Codex。
+5. **验证并交付。** 从实际安装目录执行 `python3 <installedPath>/scripts/bridge.py --status` 和 `python3 <installedPath>/scripts/settings.py`，确认连接与设置可读。自动 Hook 需由用户到 **Plugins → KuruPal → Hooks → Review / Trust all** 审阅；聊天输入框的 **Review hooks** 也可使用。不要代写信任配置；用户已关闭 Hook 时保持关闭。
 
 安装完成后，用户可以直接说“把桌宠调小一点”“关注 000001 和 600519”“移除 000001”。大小和关注列表设置不依赖 Hook 信任。不要把插件安装成功当作自动 Hook 已验证。
 
