@@ -131,18 +131,34 @@ async function resize(size:PetSize){
   selectedSize=size;
   try{localStorage.setItem('pet-size',size);}catch{}
 }
-type PetSettings={size:PetSize;watchlist:string[]};
+type PetSettings={size:PetSize;watchlist:string[];opacity?:number};
 const sizeItems=new Map<PetSize,CheckMenuItem>();
+const opacityItems=new Map<number,CheckMenuItem>();
+let selectedOpacity=100;
 const menuOperations=new MenuOperations();
 let checkedSize:PetSize|undefined;
+let checkedOpacity:number|undefined;
 let settingsChain:Promise<unknown>=Promise.resolve();
 function settingsTask<T>(work:()=>Promise<T>):Promise<T>{
   const next=settingsChain.then(work);settingsChain=next.catch(()=>{});return next;
 }
+async function syncOpacityMenu(){
+  if(!opacityItems.size||checkedOpacity===selectedOpacity)return;
+  const opacity=selectedOpacity;
+  await menuOperations.run(async()=>{
+    for(const [key,item] of opacityItems)await item.setChecked(key===opacity);
+    checkedOpacity=opacity;
+  });
+}
 async function applySettings(settings:PetSettings){
   if(!Object.hasOwn(sizes,settings.size))throw Error('无效的桌宠大小');
+  const opacity=settings.opacity??100;
+  if(!Number.isInteger(opacity)||opacity<25||opacity>100)throw Error('无效的透明度');
   const next=parseWatchlist(settings.watchlist);
   if(settings.size!==selectedSize)await resize(settings.size);
+  if(opacity!==selectedOpacity){
+    selectedOpacity=opacity;app.style.setProperty('--pet-opacity',String(opacity/100));
+  }
   if(JSON.stringify(next)!==JSON.stringify(watchlist)){
     watchlist=next;localStorage.setItem('watchlist',JSON.stringify(next));
     marketMonitor.setSymbols(next);renderWatchlist();pollMarket();
@@ -154,6 +170,7 @@ async function applySettings(settings:PetSettings){
       checkedSize=size;
     });
   }
+  await syncOpacityMenu();
 }
 async function updateSettings(patch:Partial<PetSettings>){
   await applySettings(await invoke<PetSettings>('pet_settings',{patch}));
@@ -175,6 +192,23 @@ async function start(){
       }
     }));
   }
+  checkedSize=selectedSize;
+  for(const opacity of [100,75,50,25]){
+    opacityItems.set(opacity,await CheckMenuItem.new({
+      id:`opacity-${opacity}`,text:`${100-opacity}%`,checked:selectedOpacity===opacity,
+      action:()=>{
+        void settingsTask(async()=>{
+          // Native check items toggle themselves, even when selecting the
+          // current value. Restore the saved selection on success or failure.
+          checkedOpacity=undefined;
+          try{await updateSettings({opacity});}finally{await syncOpacityMenu();}
+        }).catch(e=>{
+          error.hidden=false;error.textContent='透明度调整失败：'+String(e);
+        });
+      }
+    }));
+  }
+  checkedOpacity=selectedOpacity;
   await resize(selectedSize).catch(e=>{error.hidden=false;error.textContent='尺寸恢复失败：'+String(e);});
   const clickThrough=await CheckMenuItem.new({
     id:'click-through',text:'点击穿透：已关闭',checked:false,
@@ -191,14 +225,22 @@ async function start(){
   }
   await listen<boolean>('click-through-changed',event=>{void syncClickThrough(event.payload);});
   await listen<string>('click-through-error',event=>{error.hidden=false;error.textContent='点击穿透切换失败：'+event.payload;});
+  await listen<string>('window-control-error',event=>{error.hidden=false;error.textContent='窗口操作失败：'+event.payload;});
   const initialClickThrough=await invoke<boolean>('click_through_enabled');
   await syncClickThrough(initialClickThrough);
   const menu=await Menu.new({items:[
     ...Object.entries(labels).map(([id,text])=>({id,text:text!,action:()=>manual(id as Action)})),
     {item:'Separator'},
     {text:'桌宠大小',items:[...sizeItems.values()]},
+    {text:'透明度',items:[...opacityItems.values()]},
     {id:'stocks',text:'设置关注股票…',action:openStocks},
     clickThrough,
+    {id:'hide',text:'隐藏桌宠',action:()=>{
+      // Wait for the native popup to close before hiding its host window.
+      void menuOperations.run(()=>invoke('hide_pet')).catch(e=>{
+        error.hidden=false;error.textContent='隐藏失败：'+String(e);
+      });
+    }},
     {item:'Separator'},
     {id:'quit',text:'退出桌宠',action:()=>{void getCurrentWindow().close();}}
   ]});

@@ -1,6 +1,6 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 mod settings;
-mod click_through;
+mod window_controls;
 use tauri::Manager;
 use std::time::{Duration, Instant};
 use tokio::sync::Mutex;
@@ -91,7 +91,7 @@ fn pet_settings(app: tauri::AppHandle, initial: Option<serde_json::Value>, patch
 }
 fn main() {
     tauri::Builder::default().manage(FetchState(Mutex::new(None)))
-        .setup(|app| { click_through::setup(app)?; Ok(()) })
-        .invoke_handler(tauri::generate_handler![drain_hooks, quotes, market_log, pet_settings, click_through::toggle_click_through, click_through::click_through_enabled])
+        .setup(|app| { window_controls::setup(app)?; Ok(()) })
+        .invoke_handler(tauri::generate_handler![drain_hooks, quotes, market_log, pet_settings, window_controls::toggle_click_through, window_controls::click_through_enabled, window_controls::hide_pet])
         .run(tauri::generate_context!()).expect("无法启动桌宠");
 }

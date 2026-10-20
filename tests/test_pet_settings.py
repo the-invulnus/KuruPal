@@ -15,7 +15,7 @@ class SettingsTest(unittest.TestCase):
     def test_preserve_add_remove_replace_and_size(self):
         with tempfile.TemporaryDirectory() as directory:
             base = Path(directory)
-            (base/'settings.json').write_text(json.dumps({'size':'medium','watchlist':['000001'],'schemaVersion':1}))
+            (base/'settings.json').write_text(json.dumps({'size':'medium','watchlist':['000001'],'opacity':75,'schemaVersion':1}))
             value = settings.change(base, size='small', add=['600519','000001'])
             self.assertEqual(value['watchlist'], ['000001','600519'])
             value = settings.change(base, remove=['000001'])
@@ -23,6 +23,7 @@ class SettingsTest(unittest.TestCase):
             self.assertEqual(value['size'], 'small')
             self.assertEqual(settings.change(base, replace=[])['watchlist'], [])
             self.assertEqual(settings.read(base)['schemaVersion'], 1)
+            self.assertEqual(settings.read(base)['opacity'], 75)
 
     def test_invalid_edit_leaves_existing_settings(self):
         with tempfile.TemporaryDirectory() as directory:
