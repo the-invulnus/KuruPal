@@ -1,6 +1,18 @@
-# KuruPal
+# KuruPal · 韭留美桌宠
 
-透明桌宠，支持角色动作与语录、A 股行情提醒，以及 agent 任务反馈。可以通过 Codex 调整桌宠大小、管理关注股票。
+把 **久留美** 请到桌面上，也可以叫她 **“韭留美”**。
+
+<p align="center">
+  <img src="assets/branding/kurupal-avatar.png" width="160" alt="久留美（韭留美）头像">
+</p>
+
+陪你写代码，也陪你盯盘：一会儿抱头崩溃，一会儿含泪大笑，偶尔还要双手合十祈祷。
+
+| 抱头崩溃 | 仰头含泪大笑 | 双手合十祈祷 |
+| :---: | :---: | :---: |
+| ![久留美抱头崩溃](docs/media/panic.gif) | ![久留美仰头含泪大笑](docs/media/joyful-laugh.gif) | ![久留美双手合十祈祷](docs/media/pray.gif) |
+
+透明桌宠，支持随机待机、角色语录、A 股行情提醒和 agent 任务反馈。可以通过 Codex 调整大小、管理关注股票。
 
 ## 安装：把这段话发给你的 agent
 

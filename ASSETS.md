@@ -1,6 +1,6 @@
 # 构建与运行素材
 
-仓库仅保留当前应用和插件使用的素材：
+仓库保留当前应用、插件使用的素材，以及 README 的动作展示：
 
 | 路径 | 用途 |
 | --- | --- |
@@ -9,6 +9,7 @@
 | `assets/branding/kurupal-avatar.png` | KuruPal 头像源，用于生成图标 |
 | `src-tauri/icons/` | Tauri 原生应用图标 |
 | `codex-plugin-distribution/plugins/market-pet/assets/avatar.png` | Codex 插件及 skill 图标 |
+| `docs/media/*.gif` | README 动作预览，不参与应用构建 |
 
 Vite 的 `publicDir` 为 `public-app`，播放器通过 `src/media.ts` 加载其中的动作清单。普通构建直接使用已生成图集，不需要原视频、参考图、FFmpeg 或 AI 服务。
 
