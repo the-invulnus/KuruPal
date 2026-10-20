@@ -1,0 +1,5 @@
+interface:
+  display_name: "KuruPal"
+  short_description: "设置桌宠大小、关注股票与测试连接"
+  icon_small: "../../assets/avatar.png"
+  icon_large: "../../assets/avatar.png"

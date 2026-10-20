@@ -1,0 +1,71 @@
+{
+  "description": "Optional cosmetic notifications. Inline fail-open launcher: missing runtime/files, errors and a 1-second process deadline never return blocking output or exit codes. macOS/POSIX only.",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{ if command -v python3 >/dev/null 2>&1 && [ -r \"${PLUGIN_ROOT}/scripts/bridge.py\" ]; then python3 -c 'import runpy, signal, sys; signal.alarm(1); path = sys.argv[1]; sys.argv = [path]; runpy.run_path(path, run_name=\"__main__\")' \"${PLUGIN_ROOT}/scripts/bridge.py\"; fi; } >/dev/null 2>&1; exit 0",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{ if command -v python3 >/dev/null 2>&1 && [ -r \"${PLUGIN_ROOT}/scripts/bridge.py\" ]; then python3 -c 'import runpy, signal, sys; signal.alarm(1); path = sys.argv[1]; sys.argv = [path]; runpy.run_path(path, run_name=\"__main__\")' \"${PLUGIN_ROOT}/scripts/bridge.py\"; fi; } >/dev/null 2>&1; exit 0",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{ if command -v python3 >/dev/null 2>&1 && [ -r \"${PLUGIN_ROOT}/scripts/bridge.py\" ]; then python3 -c 'import runpy, signal, sys; signal.alarm(1); path = sys.argv[1]; sys.argv = [path]; runpy.run_path(path, run_name=\"__main__\")' \"${PLUGIN_ROOT}/scripts/bridge.py\"; fi; } >/dev/null 2>&1; exit 0",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{ if command -v python3 >/dev/null 2>&1 && [ -r \"${PLUGIN_ROOT}/scripts/bridge.py\" ]; then python3 -c 'import runpy, signal, sys; signal.alarm(1); path = sys.argv[1]; sys.argv = [path]; runpy.run_path(path, run_name=\"__main__\")' \"${PLUGIN_ROOT}/scripts/bridge.py\"; fi; } >/dev/null 2>&1; exit 0",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{ if command -v python3 >/dev/null 2>&1 && [ -r \"${PLUGIN_ROOT}/scripts/bridge.py\" ]; then python3 -c 'import runpy, signal, sys; signal.alarm(1); path = sys.argv[1]; sys.argv = [path]; runpy.run_path(path, run_name=\"__main__\")' \"${PLUGIN_ROOT}/scripts/bridge.py\"; fi; } >/dev/null 2>&1; exit 0",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "Interrupt": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{ if command -v python3 >/dev/null 2>&1 && [ -r \"${PLUGIN_ROOT}/scripts/bridge.py\" ]; then python3 -c 'import runpy, signal, sys; signal.alarm(1); path = sys.argv[1]; sys.argv = [path]; runpy.run_path(path, run_name=\"__main__\")' \"${PLUGIN_ROOT}/scripts/bridge.py\"; fi; } >/dev/null 2>&1; exit 0",
+            "timeout": 3
+          }
+        ]
+      }
+    ]
+  }
+}

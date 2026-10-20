@@ -1,0 +1,16 @@
+{
+  "name": "market-pet",
+  "version": "0.1.4",
+  "description": "KuruPal 桌宠：响应 Codex 任务、显示行情提醒，并通过 skill 设置大小与关注股票。需要桌面应用和 Python 3。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KuruPal",
+    "shortDescription": "桌宠陪伴、任务反馈与股票提醒",
+    "developerName": "KuruPal",
+    "category": "Productivity",
+    "capabilities": [],
+    "logo": "./assets/avatar.png",
+    "composerIcon": "./assets/avatar.png"
+  },
+  "hooks": "./hooks/hooks.json"
+}

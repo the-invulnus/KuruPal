@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-20",
+  "project_id": "30dfd7e9b3454077a6c4c6061c501277",
+  "action": "head-back-laugh",
+  "source": "https://natalie.mu/comic/gallery/news/656728/2782900",
+  "reference_element_id": "1b9a2cba53e04f80a4cd6b8db3edb8ca",
+  "reference_ref": "obs://ai-storage-dev/aimaas-aigc/6dff93b4c7ba4a61b3463a5c2e32bd02.jpg",
+  "video_element_id": "e38455d27148449297d8d71860858cac",
+  "video_ref": "obs://ai-storage-dev/aimaas-aigc/e7530f7b26ca4dcab39d252ad8b77bdd.mp4",
+  "capability_id": "generate_video/doubao-seedance-2-0-260128-tokenpony",
+  "prompt": "制作5秒、无声、纯白背景的二维日系动画角色表演，赛璐璐平涂，1:1。\n图片1为角色外观、服装、身材比例和开场画面的唯一标准。角色穿米黄色长袖开衫、白色圆领连衣裙、细酒红蝴蝶结，没有包和肩带，粉色短发、白色发夹。保持图片1的三头身短小身体和原作动画头脸画法。\n图片2仅用于参考大笑的脸部表情、头部角度和近景构图，不复制图片2的服装、身材比例或场景。\n第一镜：先清楚呈现图片1的正面全身站姿，人物大小、位置、双手自然下垂、闭嘴微笑和机位都与图片1一致，短暂停顿后才开始动作。\n第二镜：嘴角先上扬，肩膀轻颤，随后闭眼张嘴大笑，头向后仰起，上身稍稍后倾，双手保持自然垂在身体两侧。笑的动作由短暂蓄势到突然展开，再连续两三次笑颤，头发跟随轻动。\n第三镜：动作展开时镜头连续推近并抬高，转成图片2式斜上方俯拍的脸部近景，略倾斜构图。身体始终保持三头身，只因推近自然离开画面。\n目标表情忠实参考图片2：闭合的弯弯笑眼、黑色睫毛、脸颊粉红斜线红晕，眼角有笑出来的透明泪珠，嘴巴充分张开、嘴角上扬，仰着头笑得停不下来。头和肩随大笑微颤，表现原作动画夸张有趣的表情变化。\n结尾保持这个仰头大笑的脸部近景，眼角带泪，仍有少量笑颤。背景始终纯白，画面没有字幕、图标或文字。",
+  "qa": "Offline 1fps contact sheet checked: baseline standing start, closed-eye open-mouth laugh, tear beads and camera push-in present. Final camera remains more frontal and less tilted than original. Not integrated in app.",
+  "local_video": "production/qa/head-back-laugh.mp4",
+  "transparent_ref": "obs://ai-storage-dev/aimaas-aigc/27c985960a9b4abe8e0a56c2fcae05c2.webm",
+  "transparent_element_id": "dc0dbf18e9504d83bb4ed923dc15105d",
+  "transparent_local": "assets/transparent/head-back-laugh.webm",
+  "alpha_check": "121 decoded frames; all frames contain transparency; alpha range 0–255"
+}

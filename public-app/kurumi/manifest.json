@@ -1,0 +1,115 @@
+{
+  "name": "久留美 · 透明桌宠",
+  "actions": {
+    "idle": {
+      "type": "sprite",
+      "src": "idle-loop.png",
+      "frameWidth": 320,
+      "frameHeight": 320,
+      "columns": 10,
+      "frames": 145,
+      "fps": 24,
+      "loop": true
+    },
+    "panic": {
+      "type": "sprite",
+      "src": "panic.png",
+      "frameWidth": 320,
+      "frameHeight": 320,
+      "columns": 10,
+      "frames": 121,
+      "fps": 24,
+      "loop": false
+    },
+    "happy": {
+      "type": "sprite",
+      "src": "excited.png",
+      "frameWidth": 320,
+      "frameHeight": 320,
+      "columns": 10,
+      "frames": 121,
+      "fps": 24,
+      "loop": false
+    },
+    "celebrate": {
+      "type": "sprite",
+      "src": "laugh.png",
+      "frameWidth": 320,
+      "frameHeight": 320,
+      "columns": 10,
+      "frames": 121,
+      "fps": 24,
+      "loop": false
+    },
+    "pray": {
+      "type": "sprite",
+      "src": "pray.png",
+      "frameWidth": 320,
+      "frameHeight": 320,
+      "columns": 10,
+      "frames": 121,
+      "fps": 24,
+      "loop": false
+    },
+    "sad": {
+      "type": "sprite",
+      "src": "vacant.png",
+      "frameWidth": 320,
+      "frameHeight": 320,
+      "columns": 10,
+      "frames": 121,
+      "fps": 24,
+      "loop": false
+    },
+    "idlePeek": {
+      "type": "sprite",
+      "src": "idle-peek.png",
+      "frameWidth": 320,
+      "frameHeight": 320,
+      "columns": 10,
+      "frames": 145,
+      "fps": 24,
+      "loop": false
+    },
+    "idleSmug": {
+      "type": "sprite",
+      "src": "idle-smug.png",
+      "frameWidth": 320,
+      "frameHeight": 320,
+      "columns": 10,
+      "frames": 145,
+      "fps": 24,
+      "loop": false
+    },
+    "idleNervous": {
+      "type": "sprite",
+      "src": "idle-nervous.png",
+      "frameWidth": 320,
+      "frameHeight": 320,
+      "columns": 10,
+      "frames": 145,
+      "fps": 24,
+      "loop": false
+    },
+    "tearful": {
+      "type": "sprite",
+      "src": "tearful.png",
+      "frameWidth": 320,
+      "frameHeight": 320,
+      "columns": 10,
+      "frames": 121,
+      "fps": 24,
+      "loop": false
+    },
+    "joyfulLaugh": {
+      "type": "sprite",
+      "src": "joyful-laugh.png",
+      "frameWidth": 320,
+      "frameHeight": 320,
+      "columns": 10,
+      "frames": 121,
+      "fps": 24,
+      "loop": false
+    }
+  }
+}

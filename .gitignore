@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.venv/
+work/
+src-tauri/target/
+src-tauri/binaries/market-data-*
+__pycache__/
+
+# Local releases and installers (publish separately when requested)
+releases/
+*.zip
+*.dmg
+*.app/
+*.msi
+*.exe
+
+# Generated/local files
+.DS_Store
+src-tauri/gen/
+outputs/
+*.pyc
+.env
+.env.*
+!.env.example
+archive/workspace-work/

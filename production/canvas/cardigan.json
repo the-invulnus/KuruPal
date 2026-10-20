@@ -1,0 +1,589 @@
+{
+  "project_id": "30dfd7e9b3454077a6c4c6061c501277",
+  "exported_at": "2026-10-20",
+  "elements": [
+    {
+      "id": "a0c7a4c2743c40e68ecdb3e090800b34",
+      "type": "image",
+      "name": "微信图片_20261019185100_41_7.jpg",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/ff96ddf2d29e433d909f1ac09489af5f.jpg",
+      "text": null,
+      "generation": null
+    },
+    {
+      "id": "1e4b0cdc441e4a2c8ab8aaa16824a128",
+      "type": "image",
+      "name": "微信图片_20261019185027_39_7.jpg",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/7cd50f92a2e44ffd95824f4f0e1c8d1a.jpg",
+      "text": null,
+      "generation": null
+    },
+    {
+      "id": "8eca5bfce0824596aed3ee4627555ad2",
+      "type": "image",
+      "name": "微信图片_20261019185044_40_7.jpg",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/0be47963761045f0acf7a40ddce7b20f.jpg",
+      "text": null,
+      "generation": null
+    },
+    {
+      "id": "8f68bab4d09c45fc8e13b4687978c6fe",
+      "type": "image",
+      "name": "微信图片_20261019184932_38_7.jpg",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/ef9f313140514c309211741cdcbd4019.jpg",
+      "text": null,
+      "generation": null
+    },
+    {
+      "id": "9b7bcec93fe34ad88920466c9f319d64",
+      "type": "image",
+      "name": "造型基准01｜米黄开衫·原作自信微笑·Q版约3头身",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/872537fce3a843568ff0aa71460b42fa.png",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "prompt": "根据四张动画截图，重新制作《FX战士久留美》福贺久留美的单人Q版全身桌宠静态造型基准。严格区分参考任务：图片1、图片2、图片3仅决定穿着、开衫剪裁、内搭领口和胸前蝴蝶结，以及发型特征；图片4决定头部的脸型、五官相对位置、眼睛、眉毛和自信的微笑表情。正常比例截图仅提供这些局部信息，输出必须重新压缩成约2.8到3头身的矮小Q版身体，不能照搬截图的正常身材。\n头部：保持图片4的原作动画脸型、粉色短波波头轮廓、厚重分束刘海、侧面白色小发夹、紫粉色眼睛及高光形状。表情忠实照图片4：双眼睁开、视线朝观众，眉头略微向内压，嘴巴闭合、嘴角轻轻上扬，带一点笃定和小小得意；不是甜美眯眼笑、张嘴笑、惊讶或凶狠。保持原作头脸画法，不把脸改成婴儿圆球、通用萌妹脸或黑豆眼。原截图的紫蓝冷光不当作肤色发色，恢复均匀中性光下正常的粉色头发、白皙肤色、淡淡红晕。\n穿着：准确提取图片1至3的米黄色/浅驼黄色长袖针织开衫，宽松落肩、V形开口、前襟小纽扣、罗纹袖口和下摆，开衫长度与图片1相符，略遮住内搭裙装大部分，只露出下方短短的一截白色裙摆。内搭是图片2和3的白色圆角翻领连衣裙，领口下系细酒红色蝴蝶结、两根细长垂带，蝴蝶结在开衫开口清楚可见。开衫不能变成粉色，也不要套用此前无开衫的默认造型。保留图片1至3肩上的灰色简洁托特包和深色肩带，包在身侧垂下、大小按Q版缩小，不挡脸、胸前蝴蝶结和双手。裸腿，深酒红色简洁搭带鞋；鞋是为参考图未展示部分沿用既有桌宠设定，不增加长袜或复杂装饰。\n比例和姿势：整体约3头身，头占站立总高度约三分之一，短躯干、短胳膊短腿、窄肩，紧凑圆润但保留原作面部。自然站立，全身略微侧前方，脸朝观众，双手在身体两侧自然下垂并与身体略分开，不抱臂、不持手机、不闭眼，适合作所有后续动作的统一起始站姿。身体衣服简化为Q版轮廓，不强调胸部或成人身体曲线。\n二维日式TV动画手绘线稿、干净清晰轮廓、赛璐璐平涂、少量明确阴影，与原动画画风一致。正方形画布，单人居中，全身包括完整头发、包、手和双脚，头顶约画布12%处，脚底约88%处，四周留白。纯白背景，无地面、无投影、无场景、无字幕、无文字、水印、Logo、边框。只输出一张完整全身基准立绘，不要分镜、对照图、表情表或多视图。",
+          "resolution": "2K",
+          "aspect_ratio": "1:1",
+          "negative_prompt": "正常成人身材，五头身，七头身，长腿，长躯干，照搬截图正常身体比例，粉色开衫，无开衫，水手服，独立百褶裙，黑长袜，换发型，通用婴儿脸，黑豆眼，眯眼微笑，张嘴大笑，凶狠怒脸，手机，交叉抱臂，3D，真人，厚涂，复杂光影，夕阳橙色染色，蓝紫色肤色，背景场景，文字，字幕，水印，多人，分格，裁掉头脚",
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/ff96ddf2d29e433d909f1ac09489af5f.jpg",
+            "obs://ai-storage-dev/aimaas-aigc/0be47963761045f0acf7a40ddce7b20f.jpg",
+            "obs://ai-storage-dev/aimaas-aigc/7cd50f92a2e44ffd95824f4f0e1c8d1a.jpg",
+            "obs://ai-storage-dev/aimaas-aigc/ef9f313140514c309211741cdcbd4019.jpg"
+          ]
+        },
+        "capability_id": "generate_image/gemini-3-pro-gaorui-banana"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "557b81e2bcbe41e89e100d4e42fd17ba",
+      "type": "image",
+      "name": "造型基准02｜米黄开衫·无包版·Q版约3头身",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "prompt": "对图片1进行局部编辑，唯一修改是彻底移除角色身上的整个包及其所有肩带：删除身侧的灰色托特包、肩上的深色带子、任何跨胸或身体背后的背带、带扣和挂件。包和肩带删除后，按照周围服装自然补全米黄色针织开衫的肩膀、袖子、前襟、下摆和内搭，补全被遮挡的身体轮廓及纯白背景，不留深色条纹、残影或不自然色块。完整保留图片1原有头脸、自信的闭嘴微笑、粉色波波头、白色发夹、紫粉色眼睛、约3头身Q版比例、米黄色长袖开衫、白色圆领连衣裙、酒红色胸前蝴蝶结及鞋子、双手自然垂下的站姿、人物在画面中的位置与大小、线稿及赛璐璐画风。不要重新设计人物，不改变表情、服装颜色或身体比例，不添加手机或其他道具。保持单人完整全身，纯白背景、无投影、无文字水印，与图片1同样的正方形构图。",
+          "resolution": "2K",
+          "aspect_ratio": "1:1",
+          "negative_prompt": "包，背包，托特包，手提包，肩带，背带，斜挎带，深色肩带残留，手机，新道具，换装，改变表情，长腿，正常身材，3D，文字，水印",
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/872537fce3a843568ff0aa71460b42fa.png"
+          ]
+        },
+        "capability_id": "generate_image/gemini-3-pro-gaorui-banana"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "d9e966db242544fd85b8acd75994318e",
+      "type": "image",
+      "name": "动作参考01｜原作抱头颜艺·仅表情手势和特写构图",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/10aa37437e9c480f8d8483b38f5042a9.jpg",
+      "text": null,
+      "generation": null
+    },
+    {
+      "id": "beca9695e57d4511a9de7825099171c5",
+      "type": "video",
+      "name": "动作01｜基准站姿起手·抱头惊讶特写·无包开衫Q版480P",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/96756a1bdd09421ba18f7434dd8fea5b.mp4",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "mode": "reference",
+          "prompt": "5秒无声、白底的二维日式搞笑动画。图片1的Q版角色是唯一造型标准，保持粉色短发、发夹、紫粉色眼睛、大头短四肢、米黄色针织开衫和白色圆领连衣裙、酒红色蝴蝶结。不带包或肩带。图片2只参考夸张的惊讶表情、双手抱头手势和特写构图。\n镜头1：开场画面严格复现图片1，人物姿态、身体朝向、双手自然垂下的位置、面部微笑、人物大小、画面位置、相机角度和白底均与图片1相同。先清楚展示这张基准站姿，再开始动作。不要从抱头、蹲下或近景开始。\n镜头2：角色从图片1的站姿连续行动：微笑消失，双眼睁大，肩膀抬起；双手从身体两侧抬到头两侧，手指扶住头发；角色顺势前倾、弯膝蹲下，转到图片2对应的侧前方。动作开始后，相机才沿斜前方跟随人物下降并向脸部推进。通过一次连续推进，由全身画面变为脸与双手近景，下方衣裙自然退出构图。相机推进不改变角色的大头短四肢比例。\n镜头3：相机停在图片2式的特写构图。脸和两侧抱头双手成为画面中心，两条前臂从下方框住脸，袖子仍是图片1的米黄色开衫。角色眼睛睁得很大、瞳孔缩小，嘴张大，额头加青灰色漫画阴影和竖向排线，脸旁出现大汗滴；肩膀与手臂短促颤抖两次。少量头侧冲击线、颤抖线增强搞笑效果，不遮挡眼睛和手。最后维持抱头蹲姿与夸张惊讶的脸部特写，短暂停格，只留微弱颤抖。\n清晰的手绘赛璐璐线条和平涂，关键姿态鲜明、表情切换利落，保持图片1的Q版角色。全片无场景背景、无文字字幕或水印、无其他角色，不改变服装，不添加包和道具。开场必须是图片1的原始站姿，后续才出现动作和运镜；结束保持表情高潮。",
+          "resolution": "480P",
+          "aspect_ratio": "1:1",
+          "generate_audio": false,
+          "duration_seconds": 5,
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png",
+            "obs://ai-storage-dev/aimaas-aigc/10aa37437e9c480f8d8483b38f5042a9.jpg"
+          ]
+        },
+        "capability_id": "generate_video/doubao-seedance-2-0-260128-tokenpony"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "4b13027f3ad54c288ccecb9675bee88a",
+      "type": "video",
+      "name": "动作02｜站姿起手·手机兴奋推近·无包开衫Q版480P",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/d6cd9393eeaa4cedaa5e355eefec8725.mp4",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "mode": "reference",
+          "prompt": "5秒无声、白底的二维日式TV动画Q版桌宠。将图片1的女孩定义为久留美。图片1是唯一造型及起始镜头标准：粉色短波波头、白色发夹、紫粉色眼睛，大头短躯干短四肢、约3头身，米黄色长袖针织开衫、白色圆领连衣裙、酒红蝴蝶结和既有鞋子，无包无肩带。均匀光照、手绘清晰线稿、彩色赛璐璐平涂、关键姿态鲜明、短暂停格，保持原动画画风，无文字字幕水印或额外人物。\n镜头1：第一画面严格复现图片1的原始基准站姿，身体和头的朝向、双手自然下垂的位置、手脚姿势、闭嘴微笑、人物大小、居中位置、头顶与脚底高度、相机角度和白底都与图片1一致。先清楚呈现这一站姿，停留一小拍，再从这个姿势连续开始动作；开场不提前抬手、坐下或采用近景。所有运镜都在动作开始之后发生。相机放大只改变景别，不改变久留美的头身比例和四肢长度，侧面及特写仍是图片1同一个Q版造型。\n图片2只指导后续双手握手机的手势、闪亮双眼的兴奋表情和脸与手机的近景布局；不采用图片2的红色制服、正常身体长度或背景。动作：看手机后忍不住兴奋。\n镜头2：保持基准站姿后，久留美一只手从自然下垂位置移动到开衫侧口袋，取出一部简洁小手机，另一只手从身体另一侧抬起接住，双手在胸前握稳手机。久留美低头看屏幕，眼睛一点点睁大、眉毛扬起、嘴角上扬，肩膀向内缩起；动作有连续取出和抬起过程，手机不能在开场就出现在手上。相机这时才沿侧前方做一次平稳而迅速的推进，由全身收为脸与手机近景，参考图片2的视角和手脸相对位置，下半身自然退出构图。\n镜头3：镜头停在近景，久留美双眼亮起原作式的大高光，双颊微红，紧紧握住手机，兴奋得肩膀短促抖两次；嘴角咧开但不用说话。头旁两枚小手绘闪光短暂闪一下，保留日式夸张停格的节奏。最后保持闪亮眼神与双手握手机的兴奋近景。无品牌、屏幕文字、金币、包或额外道具。",
+          "resolution": "480P",
+          "aspect_ratio": "1:1",
+          "generate_audio": false,
+          "duration_seconds": 5,
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png",
+            "obs://ai-storage-dev/aimaas-aigc/a2d1e1f2cdd54043ac460abf6e55060e.jpg"
+          ]
+        },
+        "capability_id": "generate_video/doubao-seedance-2-0-260128-tokenpony"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "eba03ecbad3c475c902173c60a9e19dc",
+      "type": "video",
+      "name": "动作03｜站姿起手·双手捂嘴狂笑近景·无包开衫Q版480P",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/6ee110345f63403ca6fa97b675a5e9d3.mp4",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "mode": "reference",
+          "prompt": "5秒无声、白底的二维日式TV动画Q版桌宠。将图片1的女孩定义为久留美。图片1是唯一造型及起始镜头标准：粉色短波波头、白色发夹、紫粉色眼睛，大头短躯干短四肢、约3头身，米黄色长袖针织开衫、白色圆领连衣裙、酒红蝴蝶结和既有鞋子，无包无肩带。均匀光照、手绘清晰线稿、彩色赛璐璐平涂、关键姿态鲜明、短暂停格，保持原动画画风，无文字字幕水印或额外人物。\n镜头1：第一画面严格复现图片1的原始基准站姿，身体和头的朝向、双手自然下垂的位置、手脚姿势、闭嘴微笑、人物大小、居中位置、头顶与脚底高度、相机角度和白底都与图片1一致。先清楚呈现这一站姿，停留一小拍，再从这个姿势连续开始动作；开场不提前抬手、坐下或采用近景。所有运镜都在动作开始之后发生。相机放大只改变景别，不改变久留美的头身比例和四肢长度，侧面及特写仍是图片1同一个Q版造型。\n图片2只指导双手捂嘴手势、睁眼脸红的表情、头部倾斜以及双手与脸的近景构图；不采用图片2的身体长度、服装、电脑或漫画文字。动作重点是图片2那种双手一起捂嘴、兴奋紧绷地憋不住笑，而非单手手背遮嘴的得意微笑。\n镜头2：明确展示图片1的站姿后，久留美眼睛突然发亮，两只手同时从身体两侧抬到嘴前，手指自然弯曲并交叠覆盖嘴唇，鼻尖以上与双眼始终露出。久留美头轻歪、略微低头前倾、肩膀缩起。借着前倾，相机沿斜前方做一次明确的快速推进，由全身收为脸与双手近景，尽量贴合图片2的头部朝向与构图，下半身自然离开画面。\n镜头3：相机停在近景。久留美双眼保持睁大、带明亮高光，双颊涨红、额角出现汗滴；双手始终交叠捂嘴，肩膀和前臂连续短促颤抖三次，间隔有清楚的停顿。肩旁只加少量手绘颤抖线，脸红可用红色排线增强。最后保持双手捂嘴、睁眼脸红的兴奋近景，余下微弱肩抖。不眯眼、不抬下巴、不单手掩嘴、不把另一手放腰间，不加闪光粒子、皇冠或包。",
+          "resolution": "480P",
+          "aspect_ratio": "1:1",
+          "generate_audio": false,
+          "duration_seconds": 5,
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png",
+            "obs://ai-storage-dev/aimaas-aigc/befa7dab80e043f3bc5f02012e6c853f.webp"
+          ]
+        },
+        "capability_id": "generate_video/doubao-seedance-2-0-260128-tokenpony"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "364cacd711454e8cb9a28212fef4c613",
+      "type": "video",
+      "name": "动作04｜站姿起手·低头祈祷侧拍推近·无包开衫Q版480P",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/743824bc7b2b4d7cb6c3d294411f2195.mp4",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "mode": "reference",
+          "prompt": "5秒无声、白底的二维日式TV动画Q版桌宠。将图片1的女孩定义为久留美。图片1是唯一造型及起始镜头标准：粉色短波波头、白色发夹、紫粉色眼睛，大头短躯干短四肢、约3头身，米黄色长袖针织开衫、白色圆领连衣裙、酒红蝴蝶结和既有鞋子，无包无肩带。均匀光照、手绘清晰线稿、彩色赛璐璐平涂、关键姿态鲜明、短暂停格，保持原动画画风，无文字字幕水印或额外人物。\n镜头1：第一画面严格复现图片1的原始基准站姿，身体和头的朝向、双手自然下垂的位置、手脚姿势、闭嘴微笑、人物大小、居中位置、头顶与脚底高度、相机角度和白底都与图片1一致。先清楚呈现这一站姿，停留一小拍，再从这个姿势连续开始动作；开场不提前抬手、坐下或采用近景。所有运镜都在动作开始之后发生。相机放大只改变景别，不改变久留美的头身比例和四肢长度，侧面及特写仍是图片1同一个Q版造型。\n仅用图片1控制造型。动作依据漫画低头祈求的身体语言改编：双膝跪坐、双手扣紧在额前、缩肩低头前倾。\n镜头2：从图片1清楚呈现的原始站姿连续开始，久留美笑容收起、眉头轻皱，两只手从身体两侧抬起，在胸前十指扣紧。久留美身体转向侧前方，双膝弯曲，脚背向后、臀部轻落到脚跟，成为Q版跪坐。久留美顺势把扣紧的双手抬到额前，深深低头让额头靠近手指，眼睛闭紧、双肘向内收、后背前倾。动作是短腿弯曲、重心下降，不增加躯干或四肢长度。开衫与裙摆自然随下跪落下。\n相机在动作起动后沿侧前方斜向跟进，伴随下降并向头和双手靠近，构图由全身连续收为头、额前双手与肩背近景，腿部自然退出构图。只用这一条清楚的推进路径。\n镜头3：相机停在侧前方近景，久留美维持闭眼低头、十指紧扣在额前，肩膀轻颤两次，额旁一滴大汗珠缓缓滑下，手腕附近两组短颤抖线。最后保持低头祈求近景，留一拍安静紧张的停顿。不是昂头微笑、直掌合十的拜年，不偷睁一只眼，不舞动手臂，不生成神像、光柱、桌椅、手机、包或文字。",
+          "resolution": "480P",
+          "aspect_ratio": "1:1",
+          "generate_audio": false,
+          "duration_seconds": 5,
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png"
+          ]
+        },
+        "capability_id": "generate_video/doubao-seedance-2-0-260128-tokenpony"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "8bf53e935a584035a1807eb3b99e4d9d",
+      "type": "video",
+      "name": "动作05｜站姿起手·泄气放空缓推·无包开衫Q版480P",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/fe3c977f6cf44c94820f1ea58d21f1a0.mp4",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "mode": "reference",
+          "prompt": "5秒无声、白底的二维日式TV动画Q版桌宠。将图片1的女孩定义为久留美。图片1是唯一造型及起始镜头标准：粉色短波波头、白色发夹、紫粉色眼睛，大头短躯干短四肢、约3头身，米黄色长袖针织开衫、白色圆领连衣裙、酒红蝴蝶结和既有鞋子，无包无肩带。均匀光照、手绘清晰线稿、彩色赛璐璐平涂、关键姿态鲜明、短暂停格，保持原动画画风，无文字字幕水印或额外人物。\n镜头1：第一画面严格复现图片1的原始基准站姿，身体和头的朝向、双手自然下垂的位置、手脚姿势、闭嘴微笑、人物大小、居中位置、头顶与脚底高度、相机角度和白底都与图片1一致。先清楚呈现这一站姿，停留一小拍，再从这个姿势连续开始动作；开场不提前抬手、坐下或采用近景。所有运镜都在动作开始之后发生。相机放大只改变景别，不改变久留美的头身比例和四肢长度，侧面及特写仍是图片1同一个Q版造型。\n仅用图片1控制造型。动作以漫画中的空洞眼神、松垮肩背为灵感，地面侧坐为桌宠改编，节奏安静好笑。\n镜头2：在图片1的起始站姿清楚呈现后，久留美的微笑慢慢收起，上眼皮垂下、嘴变成短平线，肩膀泄气般落下。久留美双膝轻弯，身体自然侧转并坐到地面，双腿收拢在裙摆一侧，双手从身体两侧顺势移到膝上，裙摆自然覆盖腿部，保持大头短身体的Q版比例。动作连贯，不突然替换成坐姿。\n镜头3：久留美维持侧坐、背略弓、头微偏，半睁眼睛空洞地凝视远处。相机此时沿侧前方视轴缓慢推进，由可见坐姿的中景收紧到脸和肩膀近景。久留美的眼睛高光略减少、紫粉瞳色保留，嘴巴仍是一条小平线，停顿一拍后才慢慢眨一次眼，恢复同样的无神视线。头旁短暂出现一小团灰色手绘乱线，再淡去。摄影机在近景停下，以无神眼神和极轻呼吸结束。用长停顿形成搞笑余味，不大幅摇摆，不哭喊、抱头或突然咧嘴，不出现灵魂、电脑桌椅、包、手机、文字和额外道具。",
+          "resolution": "480P",
+          "aspect_ratio": "1:1",
+          "generate_audio": false,
+          "duration_seconds": 5,
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png"
+          ]
+        },
+        "capability_id": "generate_video/doubao-seedance-2-0-260128-tokenpony"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "08e4c852b5fe47f0a949056682a9e014",
+      "type": "video",
+      "name": "待机01｜故作镇定·呼吸眨眼基础循环·无包开衫Q版480P",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/808909292c60469d8ab29502a44febf9.mp4",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "mode": "reference",
+          "prompt": "6秒无声白底二维日系TV动画Q版桌宠。图片1是唯一造型与构图标准：粉色短波波头和白色发夹、紫粉色双眼、约3头身大头短四肢，米黄色针织开衫、白色圆领内搭连衣裙、酒红色蝴蝶结与既有鞋子，无包无肩带。保留图片1自信的闭嘴微笑和原作面部辨识度。固定全身镜头，人物位置和大小、脚底位置始终稳定，纯白背景，无运镜、切镜、投影、道具、文字、水印。干净手绘线稿与赛璐璐平涂，动作轻微、清晰、有停顿，不持续左右摇摆。\n起始镜头严格复现图片1的站姿、双手自然下垂位置、头部朝向、面部表情、人物大小、头顶和脚底高度与画面位置；先呈现这个基准站姿，再发生小动作。结尾回到同一图片1的原始站姿、手位、眼神、表情和构图，以便衔接循环与其他动作。首尾均睁眼、嘴闭合，双手在身体两侧，自然站稳。身体比例不改变，米黄开衫颜色和细节保持一致。\n动作设计：久留美表面镇定自信，轻轻呼吸，只有肩膀与开衫下摆很细微地起伏；发梢有轻微的跟随运动，脚和身体重心不漂移。中间自然眨一次眼，眉毛轻轻挑一下，下巴极轻地抬起又落下，像在默默给自己打气。微笑幅度基本不变，不张嘴、不抬手、不转身。避免夸张卡通抖动和大幅缩放，整段的安静站立占大部分时间，像动画中带着自信陪伴的待机姿态。末尾恢复图片1完全相同的静态姿态，呼吸相位与开头接近。",
+          "resolution": "480P",
+          "aspect_ratio": "1:1",
+          "generate_audio": false,
+          "duration_seconds": 6,
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png"
+          ]
+        },
+        "capability_id": "generate_video/doubao-seedance-2-0-260128-tokenpony"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "b3669d4345704334b1b6486e427179d2",
+      "type": "video",
+      "name": "待机02｜想看行情又忍住·随机小动作·无包开衫Q版480P",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/76720264aaa44969a9050b51eb445e03.mp4",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "mode": "reference",
+          "prompt": "6秒无声白底二维日系TV动画Q版桌宠。图片1是唯一造型与构图标准：粉色短波波头和白色发夹、紫粉色双眼、约3头身大头短四肢，米黄色针织开衫、白色圆领内搭连衣裙、酒红色蝴蝶结与既有鞋子，无包无肩带。保留图片1自信的闭嘴微笑和原作面部辨识度。固定全身镜头，人物位置和大小、脚底位置始终稳定，纯白背景，无运镜、切镜、投影、道具、文字、水印。干净手绘线稿与赛璐璐平涂，动作轻微、清晰、有停顿，不持续左右摇摆。\n起始镜头严格复现图片1的站姿、双手自然下垂位置、头部朝向、面部表情、人物大小、头顶和脚底高度与画面位置；先呈现这个基准站姿，再发生小动作。结尾回到同一图片1的原始站姿、手位、眼神、表情和构图，以便衔接循环与其他动作。首尾均睁眼、嘴闭合，双手在身体两侧，自然站稳。身体比例不改变，米黄开衫颜色和细节保持一致。\n动作设计：先保持基准站姿，久留美眼睛偷偷瞟向开衫侧面的口袋，头只微微低一点。久留美一只手从自然下垂处轻轻抬起，刚靠近口袋就停住，手指犹豫地蜷一下，像忍不住想看行情但又提醒自己要镇定。久留美轻轻抿嘴、眼神回到观众，手放回图片1的原始位置，再恢复那种装作没事的自信微笑。小小的犹豫与停顿是笑点，手臂幅度小，不伸入口袋、不掏出任何东西。末尾停留在原始站姿。不要手机、汗滴、发光特效，不扭动身体，不走路，不换手位作为结束。",
+          "resolution": "480P",
+          "aspect_ratio": "1:1",
+          "generate_audio": false,
+          "duration_seconds": 6,
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png"
+          ]
+        },
+        "capability_id": "generate_video/doubao-seedance-2-0-260128-tokenpony"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "635b35814b8f4c5393d66e802a3d0e90",
+      "type": "video",
+      "name": "待机03｜脑内小赚·收住笑意·无包开衫Q版480P",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/09eb81b8dfc044f78819d6ce140b6384.mp4",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "mode": "reference",
+          "prompt": "6秒无声白底二维日系TV动画Q版桌宠。图片1是唯一造型与构图标准：粉色短波波头和白色发夹、紫粉色双眼、约3头身大头短四肢，米黄色针织开衫、白色圆领内搭连衣裙、酒红色蝴蝶结与既有鞋子，无包无肩带。保留图片1自信的闭嘴微笑和原作面部辨识度。固定全身镜头，人物位置和大小、脚底位置始终稳定，纯白背景，无运镜、切镜、投影、道具、文字、水印。干净手绘线稿与赛璐璐平涂，动作轻微、清晰、有停顿，不持续左右摇摆。\n起始镜头严格复现图片1的站姿、双手自然下垂位置、头部朝向、面部表情、人物大小、头顶和脚底高度与画面位置；先呈现这个基准站姿，再发生小动作。结尾回到同一图片1的原始站姿、手位、眼神、表情和构图，以便衔接循环与其他动作。首尾均睁眼、嘴闭合，双手在身体两侧，自然站稳。身体比例不改变，米黄开衫颜色和细节保持一致。\n动作设计：基准站姿安静保持一拍，久留美像想到了令人开心的小事，嘴角只悄悄多翘一点，眉毛微挑，眼神带着小小的得意。久留美双肩轻轻向内收一下，胸口小幅挺起，下巴极轻地扬起，嘴巴始终闭合；保持短短一拍后，久留美意识到自己笑得太明显，把肩膀放松、收住笑意，回到图片1的站姿和表情。全程两只手留在身体两侧，不捂嘴、不拿手机、不跳跃。不要闭眼大笑、持续肩抖、金币、皇冠、图表、闪光或漫画冲击线。这是很克制的内心小得意，区别于兴奋和狂笑事件视频。",
+          "resolution": "480P",
+          "aspect_ratio": "1:1",
+          "generate_audio": false,
+          "duration_seconds": 6,
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png"
+          ]
+        },
+        "capability_id": "generate_video/doubao-seedance-2-0-260128-tokenpony"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "89a946217639484e8d5e56dc2071ff40",
+      "type": "video",
+      "name": "待机04｜捏袖口藏住不安·无包开衫Q版480P",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/5e787d46900e46e6bee3c4432a273a51.mp4",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "mode": "reference",
+          "prompt": "6秒无声白底二维日系TV动画Q版桌宠。图片1是唯一造型与构图标准：粉色短波波头和白色发夹、紫粉色双眼、约3头身大头短四肢，米黄色针织开衫、白色圆领内搭连衣裙、酒红色蝴蝶结与既有鞋子，无包无肩带。保留图片1自信的闭嘴微笑和原作面部辨识度。固定全身镜头，人物位置和大小、脚底位置始终稳定，纯白背景，无运镜、切镜、投影、道具、文字、水印。干净手绘线稿与赛璐璐平涂，动作轻微、清晰、有停顿，不持续左右摇摆。\n起始镜头严格复现图片1的站姿、双手自然下垂位置、头部朝向、面部表情、人物大小、头顶和脚底高度与画面位置；先呈现这个基准站姿，再发生小动作。结尾回到同一图片1的原始站姿、手位、眼神、表情和构图，以便衔接循环与其他动作。首尾均睁眼、嘴闭合，双手在身体两侧，自然站稳。身体比例不改变，米黄开衫颜色和细节保持一致。\n动作设计：先保持图片1站姿，久留美笑容短暂僵住，嘴角微微收小，视线向一边挪开，眉头仅轻轻皱一点。一只手用拇指和食指轻捏自己另一只手旁的开衫袖口，袖口布料出现很轻的小褶皱，手臂只做很小的内收。停顿一拍后，久留美像提醒自己没关系，松开袖口，双手自然放回图片1身体两侧的原始位置，视线回到观众，恢复原始自信微笑。只表现轻微不安并装作镇定，不流泪、不瞳孔缩小、不青灰脸色、不抱头、不出汗、不颤抖，不加入任何情绪特效。末尾是与图片1相同的基准站姿。",
+          "resolution": "480P",
+          "aspect_ratio": "1:1",
+          "generate_audio": false,
+          "duration_seconds": 6,
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png"
+          ]
+        },
+        "capability_id": "generate_video/doubao-seedance-2-0-260128-tokenpony"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "e43ec9ce91cc4ad6a8ed9d219bb01570",
+      "type": "image",
+      "name": "动作参考02｜用户提供抱头泪崩·仅表情手势构图",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/790ca6de3e734b7bbb166234c9d236d3.png",
+      "text": null,
+      "generation": null
+    },
+    {
+      "id": "d847f2b5ddb34402bda49ec10b34b5f2",
+      "type": "video",
+      "name": "动作06｜站姿起手·抱头泪崩特写·无包开衫Q版480P",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/38554066ee934502a4abaa08b994a536.mp4",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "mode": "reference",
+          "prompt": "5秒无声白底二维日系搞笑动画。将图片1的Q版女孩定义为久留美，图片1是唯一造型和身体比例标准：粉色短波波头、白色发夹、紫粉色眼睛、大头短躯干短四肢，米黄色针织开衫、白色圆领连衣裙和酒红蝴蝶结，无包无肩带。图片2仅参考头部朝向、抓头手势、眼泪、张嘴神情和脸与双手的特写构图，不使用图片2衣服、身体比例、室内背景。图片2右侧所有社交按钮、头像、数字和界面元素全部忽略。\n镜头1：开场严格复现图片1的站姿、身体朝向、双手自然下垂位置、闭嘴微笑、人物大小与位置、相机角度和白底。清楚展示基准站姿一小拍，之后才开始动作，不以抱头或近景开场。\n镜头2：久留美的笑容突然僵住，双眼逐渐睁大、眉毛绷起；双手从身体两侧迅速抬向头两侧，手指抓住头发，肩膀缩起，身体前倾并稍微弯膝。相机在起动后沿斜前方推进，跟随身体下沉，到达图片2相似的偏侧前方机位，由全身画面收为头脸与双手近景，下面的腿自然退出构图。镜头放大不改变Q版比例。\n镜头3：相机停在图片2式的脸与双手大特写。久留美眼睛睁大、紫粉色瞳孔缩小，视线略显失焦，下眼睑积起清楚的透明泪水，随后眼泪沿两边脸颊滑落；眉毛向内上方绷起，额头和眼眶有冷灰漫画阴影与细排线。嘴张大、下唇轻颤，两只手僵在头侧抓住头发，前臂框住脸。先僵住一拍，再短促发抖两次，呈现日式动画夸张又委屈的反应。高潮用清晰关键姿态和短暂停格表现，不连续软绵绵摇摆。最后维持积泪、张嘴、双手抓头的近景，留一拍微弱颤抖。无流血、伤口或伤害情节。\n保持同一米黄开衫无包Q版造型、干净手绘线稿与彩色赛璐璐平涂，纯白背景，无字幕水印、图表、额外人物与道具。不出现手机、包、肩带或社交平台界面。",
+          "resolution": "480P",
+          "aspect_ratio": "1:1",
+          "generate_audio": false,
+          "duration_seconds": 5,
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png",
+            "obs://ai-storage-dev/aimaas-aigc/790ca6de3e734b7bbb166234c9d236d3.png"
+          ]
+        },
+        "capability_id": "generate_video/doubao-seedance-2-0-260128-tokenpony"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "a0f3614c73a641c180d340075173b328",
+      "type": "image",
+      "name": "动作06修订｜原作泪崩脸与手势关键帧·非惊讶脸",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/e49ed5102f744b5895ee4ded7e86a31d.png",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "prompt": "制作单幅彩色二维动画情绪关键帧，忠实复现图片1的那一个脸部表情、头部仰起角度、双手抓头手势以及脸与手的相对构图，而非泛化的Q版惊讶表情。图片2仅控制角色身份、原作粉色波波头和白色发夹、紫粉色眼睛、米黄色长袖开衫、白色圆领和酒红蝴蝶结，身体仍是图片2的大头短身体Q版比例，但此画面是脸与双手近景，不显示腿部。\n图片1中的角色正在僵住般绝望流泪：眉毛的内侧明显向上提起，眉峰弯成痛苦无助的形状；两只眼睛的上眼睑向下压、边缘并不圆整，眼形和两眼开合程度略有不对称；眼睛并非纯白圆圈加极小黑点。瞳孔和虹膜仍能看出褪淡的灰粉紫色，视线游离、惊惧又无力，不画成黑豆或小针点。下眼睑向上收紧，透明泪水以浅浅的泪池兜在下眼缘，泪线贴着眼睑流到脸颊，保留清楚的湿润高光，不画成对称的大圆玻璃球或两条粗白泪柱。\n准确复现图片1的嘴形：下巴掉落、嘴向纵向撑开，是略不规则的竖向椭圆大口，顶部一点细的上排牙线，深色口腔、低处少量舌面；嘴角无力向下，不是横向咧嘴，不是笑脸、开心尖叫或小波浪嘴。头微微向后仰、下巴抬起，从略低的正前方看脸，鼻下和下半脸显得发白，带少量原图的暖淡黄色。额头到眼窝以不规则的冷灰绿阴影表现脸色发沉，下半脸较亮，过渡服从五官与刘海，不用一条笔直整齐的灰黑眼罩，不用密密麻麻的漫画竖排线把脸盖住。\n双手的手指张开弯曲，指尖分别陷在两侧太阳穴上方的头发里；手背和指节可见，手掌不是平贴在头两侧的可爱捂耳朵姿势。双肘向两侧撑开，前臂以图片1的斜线框住脸；手势略不对称、有僵硬抓紧感，开衫仍是图片2的米黄色长袖和罗纹袖口。头脸和双手占据画面主体，发顶可少量出框，胸前酒红结只在下沿少量露出。保持原作头脸精细画法，不把头重新简化成通用圆球萌脸。整体是一张和图片1具体表情对应的原作风泪崩特写，肢体保持Q版的短小比例。\n纯白无场景背景，无任何UI、头像、社交按钮、数字、文字、字幕、水印或其他人物，不复制图片1的室内背景，不画包和肩带。清晰日系TV动画线稿、赛璐璐平涂。只输出单张近景关键帧，无对照图、分格或多视图。",
+          "resolution": "2K",
+          "aspect_ratio": "1:1",
+          "negative_prompt": "通用Q版吃惊脸，纯白圆眼，小黑点瞳孔，横向大笑嘴，笑着哭，整齐矩形黑眼罩，粗白泪柱，圆形玻璃球眼泪，密集竖向排线盖脸，捂耳朵，手掌平贴头侧，正常比例全身，裸臂，白衬衫无开衫，3D，社交平台按钮，文字水印，背景房间",
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/790ca6de3e734b7bbb166234c9d236d3.png",
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png"
+          ]
+        },
+        "capability_id": "generate_image/gemini-3-pro-gaorui-banana"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "d8bad9ab24f64ae098f46f402e08b2f3",
+      "type": "image",
+      "name": "动作06修订B｜失神积泪·原作眼形与小虹膜关键帧",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/d6367e1f448d49adb4369e68ce69114c.png",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "prompt": "以图片2为需要修改的绘图，重画它的全部面部表达与头部角度，使其忠实对应图片1的原作表情。图片1的脸是唯一表情答案，不要把它再解释成普通可爱哭脸。图片2只保留米黄色长袖开衫、白色圆领、酒红蝴蝶结、粉色短发和白色发夹的身份、服装与全白背景。身体保持Q版，头部使用图片1的原作动画画法，不进行萌化。\n最重要的纠正是眼睛：删除图片2的巨大亮晶晶粉紫虹膜、白色大圆反光以及仰望观众求安慰的眼神。逐项照图片1重画：两只眼睛轮廓是疲惫惊惧的、不规则的开合，上眼睑和厚睫毛明显下压，眼睑不对称；浅灰绿色的眼白上，每只眼睛有很小但仍看得出颜色的灰粉紫虹膜，虹膜直径约眼睛开口宽度四分之一，瞳孔是其中很小的暗点，目光分散、发空、不聚焦，虹膜无亮晶晶的高光。不要把眼睛画成纯白圆盘加针尖黑点，也不要让虹膜重新占到眼睛一半以上。眉毛的靠鼻梁一端高高提起，外侧往下垂，像图片1中那样扭曲无助，不是普通忧伤弯眉或生气眉。\n照图片1画眼泪：透明水薄薄兜在下眼睑形成不规则泪池，泪水溢出沿面颊流下，水很薄而不是装饰性的两根粗玻璃泪柱，没有对称大水滴。眼下有疲惫的细纹和轻微收紧的下眼睑。\n嘴和下巴：头往后仰、下巴掉落，嘴是图片1的向下撑开的不规则大开口，开口高度明显，不是横向咧开的笑嘴；上缘一条细小上齿，深色口腔和低处少量舌头，嘴角向下、下唇松弛发颤。整体是惊惧发空、僵住而失控的表情，不是开心、不卖萌、不微笑、不求抱。\n阴影复制图片1的受光关系：上半脸是不规则冷灰绿阴影，沿刘海、鼻梁和眼眶起伏，下半脸是苍白偏暖淡黄色的亮面；界线不是贯穿脸部的整齐横条或黑眼罩。五官和皮肤采用图片1的动画赛璐璐风格，线条较细、不画成粗轮廓童书卡通。\n双手照图片1的张指抓发：指尖压在头发上，一边较高一边较低、略不对称，两边前臂斜向框住脸，双肘外撑，手不是平贴捂耳。开衫罗纹袖口保留。画面由脸和双手占满，构图与图片1一致，腿不出现，适当剪裁发顶和肩侧。只输出一张修正后的近景关键帧。无文字数字UI头像按钮，无室内背景，无其他人物，无包无肩带。",
+          "resolution": "2K",
+          "aspect_ratio": "1:1",
+          "negative_prompt": "巨大虹膜，亮晶晶大眼，白色圆形大高光，求安慰的萌哭脸，哭着微笑，纯白圆盘眼，针尖小黑眼，整齐横向黑眼罩，竖排线眼罩，粗玻璃泪柱，左右对称泪滴，横向咧嘴，粗轮廓儿童卡通，3D，截图界面，字幕水印",
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/790ca6de3e734b7bbb166234c9d236d3.png",
+            "obs://ai-storage-dev/aimaas-aigc/e49ed5102f744b5895ee4ded7e86a31d.png"
+          ]
+        },
+        "capability_id": "generate_image/gemini-3-pro-gaorui-banana"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "ebf3a7cc2e3a4580bf4031dcd87ca2be",
+      "type": "image",
+      "name": "动作06修订C｜直接保留原图头脸·仅换开衫与白底",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/60fc1413b72a4b81b4bcbdca5bb6376d.png",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "prompt": "以图片1为原始画面做局部编辑，不是重新设计表情。保留图片1人物的整个头部与脸，原样保留其脸型、五官位置、眼形、下压的眼睑、眼白及小虹膜的大小比例、眉毛形状、张开的嘴形、牙齿、鼻子、下巴、泪水形状和上半脸发灰下半脸发白的光影。保留图片1凌乱头发与抓头手指的位置、头部仰起角度和近景透视。所有表情细节要尽量逐形忠实复制图片1，不改成通用可爱Q版吃惊脸，不重画成干净的对称脸，不改变眼睛和嘴的形状，不添加大眼高光。头部依然是原作正常动画画法，Q版只体现在画面下部短小的肩身。\n仅修改这些部分：删除图片1右边所有头像、按钮、数字和界面；删除室内背景替换纯白；把图片1白色上衣和露出的前臂换成图片2的米黄色长袖针织开衫、罗纹袖口、白色圆领、酒红蝴蝶结。手和原有头发抓握位置保留不动，袖子补到手腕。保持无包无肩带。输出一个人的头脸与双手近景，采用图片1原本的机位及构图，允许周围补白适配正方形，不增加身体展示，不做全身。恢复原图细节清晰度即可，不换成粗线条卡通或3D。单张，无分格、文字、水印和额外人物。",
+          "resolution": "2K",
+          "aspect_ratio": "1:1",
+          "negative_prompt": "重新设计面部，通用Q版圆脸，干净对称的表情，大亮晶晶虹膜，巨大眼高光，纯白圆眼针尖瞳孔，横向咧嘴笑，灰色矩形眼罩，漫画密集竖线，粗线条儿童卡通，额外背景，界面按钮，文字水印",
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/790ca6de3e734b7bbb166234c9d236d3.png",
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png"
+          ]
+        },
+        "capability_id": "generate_image/gemini-3-pro-gaorui-banana"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "65068f2de14e486a9b74cfa9c61a11e9",
+      "type": "video",
+      "name": "动作06修订｜原作失神泪崩·抓头后仰僵住·Q版480P",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/39dc20287e4341228327e00703753c7d.mp4",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "mode": "reference",
+          "prompt": "5秒无声白底二维日系动画，久留美从图片1站姿连续演到图片2的失神泪崩大特写。\n参考分工：图片1控制唯一的Q版身体比例、角色身份和米黄色长袖开衫、白色圆领、酒红蝴蝶结、无包无肩带的穿着，并决定起始镜头。图片2是已经校正好的高潮关键帧，必须准确复现它的脸型、眼睑形状、灰粉小虹膜、失焦眼神、眉毛、张嘴形状、积泪、张指抓发和仰头角度；图片3是原作表情校核，忽略其背景和右边UI。不要把图片2、3重新演绎成通用圆眼惊讶脸，也不要只给普通吃惊表情加两条眼泪。\n镜头1：开场严格复现图片1原始站姿、双手自然下垂位置、脚与身体朝向、闭嘴微笑、人物大小、画面位置及相机角度。清楚展示基准站姿一小拍，此时没有抬手、张嘴、泪水或特写。\n镜头2：久留美笑容慢慢僵住，两只手从身体两侧抬到头两侧，手指张开弯曲，分别抓住太阳穴上方的头发，一只手略高，双肘外撑。久留美不是惊跳或蹲下，而是上半身略后仰、下巴掉落，身体停在原地僵住。相机在动作开始后沿正前方略低的视轴做一次连续推进，逐渐把画面收束到图片2的脸和双手近景；Q版身体始终短小，近景中下半身自然离开构图。\n镜头3：相机停住，准确复现图片2并与图片3相近的脸和手构图。图片2的上眼睑下压、疲惫而不规则的开合、略不对称的眼形、眼内偏小的灰粉虹膜和失焦目光必须保留；眉毛靠鼻梁一端高提，外侧下垂。嘴保持图片2那样下巴掉落的向下撑开、不规则开口，小段上齿、深色口腔和低处舌面，嘴角无力向下，不能横向咧嘴。眼泪先积在下眼缘形成薄的不规则泪池，再少量溢到脸颊；不用大圆玻璃球眼泪或两根粗白泪柱。脸色按图片2、3上半脸发灰、下半脸苍白的受光关系，不加漫画竖排线眼罩。双手僵在张指抓发的位置，下唇和指尖只发生极轻的颤抖，先停住一拍，再泪水缓慢溢出。保持这张具体的原作式失神脸到结束，给高潮足够停留，不再次眨成其他表情。\n头脸保持原作动画画法，不萌化成通用Q版大圆脸；Q版体现在身体，不牺牲原作颜艺。米黄开衫袖子覆盖手腕，手与脖子保持自然肤色和局部阴影，不做全灰皮肤。细致手绘线稿、赛璐璐平涂，单人纯白背景，无文字水印、社交UI、包、手机和其他角色。事件重点是失神、积泪和僵住，避免动作1式的圆眼针点瞳孔、横向大嘴、蹲下抖动和整齐灰黑眼罩。",
+          "resolution": "480P",
+          "aspect_ratio": "1:1",
+          "generate_audio": false,
+          "duration_seconds": 5,
+          "reference_images": [
+            "obs://ai-storage-dev/aimaas-aigc/07270e57718a4733b074c394a1ae1fda.png",
+            "obs://ai-storage-dev/aimaas-aigc/60fc1413b72a4b81b4bcbdca5bb6376d.png",
+            "obs://ai-storage-dev/aimaas-aigc/790ca6de3e734b7bbb166234c9d236d3.png"
+          ]
+        },
+        "capability_id": "generate_video/doubao-seedance-2-0-260128-tokenpony"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "9140c01db38e464cb3beda27eba8e407",
+      "type": "video",
+      "name": "透明素材｜待机基础循环·WebM",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/c8e15eccb1e74a0ea1fc4624ceb37022.webm",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "video": "obs://ai-storage-dev/aimaas-aigc/808909292c60469d8ab29502a44febf9.mp4"
+        },
+        "capability_id": "remove_video_background/standard"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "04d6e297f8924bc59b87ff1f5bb3e243",
+      "type": "video",
+      "name": "透明素材｜原作失神泪崩修订版·WebM",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/882521c6259a4f528572103d32c6b994.webm",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "video": "obs://ai-storage-dev/aimaas-aigc/39dc20287e4341228327e00703753c7d.mp4"
+        },
+        "capability_id": "remove_video_background/standard"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "f4ad12d442f24d63b7f1aeddaa7b1ec0",
+      "type": "video",
+      "name": "透明素材｜原作失神泪崩修订版·精细WebM",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/126385091c294058a7d9f85ab34ccc48.webm",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "video": "obs://ai-storage-dev/aimaas-aigc/39dc20287e4341228327e00703753c7d.mp4"
+        },
+        "capability_id": "remove_video_background/hr"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "83d6468c2ad4434b95981a889320b947",
+      "type": "video",
+      "name": "透明素材｜脑内小赚·WebM",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/ba346a54860547f08bca25662545ad00.webm",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "video": "obs://ai-storage-dev/aimaas-aigc/09eb81b8dfc044f78819d6ce140b6384.mp4"
+        },
+        "capability_id": "remove_video_background/standard"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "1e5b7f0052b142a3a64d02d0ebacd301",
+      "type": "video",
+      "name": "透明素材｜抱头崩溃·WebM",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/c9fff3dc976e465288fd28f5f6632f63.webm",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "video": "obs://ai-storage-dev/aimaas-aigc/96756a1bdd09421ba18f7434dd8fea5b.mp4"
+        },
+        "capability_id": "remove_video_background/standard"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "4db3044bba8a45abbe27ebac7f101f54",
+      "type": "video",
+      "name": "透明素材｜偷偷确认·WebM",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/e8d206664e494acbb7eba6e7c76d5179.webm",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "video": "obs://ai-storage-dev/aimaas-aigc/76720264aaa44969a9050b51eb445e03.mp4"
+        },
+        "capability_id": "remove_video_background/standard"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "b9eb7b780ef5431fb39713ae672c6c7b",
+      "type": "video",
+      "name": "透明素材｜手机兴奋·WebM",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/7163c5dd686e47dca0cfdf8bb0ddc6c0.webm",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "video": "obs://ai-storage-dev/aimaas-aigc/d6cd9393eeaa4cedaa5e355eefec8725.mp4"
+        },
+        "capability_id": "remove_video_background/standard"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "3f47721b2e714949bf28a2b1e9511c6b",
+      "type": "video",
+      "name": "透明素材｜藏住不安·WebM",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/c15762dfa8bf4bddba15a6942241ba91.webm",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "video": "obs://ai-storage-dev/aimaas-aigc/5e787d46900e46e6bee3c4432a273a51.mp4"
+        },
+        "capability_id": "remove_video_background/standard"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "cdb639083d7440f28ca9aa049e86525c",
+      "type": "video",
+      "name": "透明素材｜双手捂嘴狂笑·WebM",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/2c13e0701df4464484b8fcd4edc5b2fe.webm",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "video": "obs://ai-storage-dev/aimaas-aigc/6ee110345f63403ca6fa97b675a5e9d3.mp4"
+        },
+        "capability_id": "remove_video_background/standard"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "21818e335f3149ad87cc51b0503199ee",
+      "type": "video",
+      "name": "透明素材｜泄气放空·WebM",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/2fc6256a0fe2446db8269e6548e6daf1.webm",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "video": "obs://ai-storage-dev/aimaas-aigc/fe3c977f6cf44c94820f1ea58d21f1a0.mp4"
+        },
+        "capability_id": "remove_video_background/standard"
+      },
+      "status": "succeeded",
+      "error": null
+    },
+    {
+      "id": "0c246c2d3adb4f47a396c52b5508edb0",
+      "type": "video",
+      "name": "透明素材｜低头祈祷·WebM",
+      "ref": "obs://ai-storage-dev/aimaas-aigc/21c42d11fb85474f98703b682bf0645f.webm",
+      "text": null,
+      "generation": {
+        "arguments": {
+          "video": "obs://ai-storage-dev/aimaas-aigc/743824bc7b2b4d7cb6c3d294411f2195.mp4"
+        },
+        "capability_id": "remove_video_background/standard"
+      },
+      "status": "succeeded",
+      "error": null
+    }
+  ]
+}

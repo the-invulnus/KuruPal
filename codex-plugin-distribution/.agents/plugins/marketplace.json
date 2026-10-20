@@ -1,0 +1,20 @@
+{
+  "name": "market-pet-local",
+  "interface": {
+    "displayName": "KuruPal Plugins"
+  },
+  "plugins": [
+    {
+      "name": "market-pet",
+      "source": {
+        "source": "local",
+        "path": "./plugins/market-pet"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
