@@ -23,3 +23,11 @@ outputs/
 .env.*
 !.env.example
 archive/workspace-work/
+
+# Authoring references, source videos and previews stay local
+assets/references/
+assets/transparent/
+production/
+public/
+archive/original-outputs/
+preview.png
