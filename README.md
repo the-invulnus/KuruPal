@@ -1,6 +1,6 @@
 # KuruPal
 
-项目仓库：[the-invulnus/KuruPal](https://github.com/the-invulnus/KuruPal)。本次仅同步源码与素材，暂不发布预编译安装包；安装时按下文从源码构建。
+项目仓库：[the-invulnus/KuruPal](https://github.com/the-invulnus/KuruPal)。桌面应用和 Codex 插件安装包统一发布在 [GitHub Releases](https://github.com/the-invulnus/KuruPal/releases)。
 
 透明桌宠，支持随机待机、角色语录、Codex 任务反馈和 A 股行情提醒。用户可以直接通过 Codex 设置桌宠大小和关注股票。
 
@@ -20,7 +20,7 @@
 
 ### 优先使用对应平台发行包
 
-先检查本地 `releases/KuruPal-0.3.8-macOS-arm64.zip`，或用户真实仓库的 Release 中对应平台资产。只下载实际存在的资产；有校验和时核对后解压。没有发行包则从源码构建，不猜测下载 URL。
+先检查本地 `releases/prepared/KuruPal-0.3.8-macOS-arm64.zip`，或用户真实仓库的 Release 中对应平台资产。只下载实际存在的资产；有校验和时核对后解压。没有发行包则从源码构建，不猜测下载 URL。
 
 ### 从源码构建（macOS arm64）
 
@@ -64,7 +64,7 @@ codex plugin marketplace add "$PWD/codex-plugin-distribution"
 codex plugin add market-pet@market-pet-local --json
 ```
 
-也可运行 `sh codex-plugin-distribution/install.command`。确认成功退出，返回版本为 **0.1.4**，保存实际 `installedPath` 用于下一步。
+也可运行 `sh codex-plugin-distribution/install.command`。若使用 Release 的 `KuruPal-Codex-Installer-0.1.4.zip`，先解压到持久目录，再执行内层 `install.command`；它包含完整插件市场，不需要构建源码。确认成功退出，返回版本为 **0.1.4**，保存实际 `installedPath` 用于下一步。
 
 显示名称为 **KuruPal**；内部插件 ID 保持 `market-pet@market-pet-local`，用于兼容旧安装。不要额外安装一个同功能插件。配置源为 `codex-plugin-distribution/plugins/market-pet/.codex-plugin/plugin.json`，不要直接编辑插件缓存或添加会遮蔽兼容清单的根级 `plugin.json`。
 
@@ -132,7 +132,13 @@ Skill 显示名是 KuruPal，兼容调用名为 `$market-pet:market-pet`。大�
 
 所有动作排队播放。Stop 只恢复待机，不把“回合结束”当成任务成功。详细映射见 [HOOKS.md](HOOKS.md)，素材和语录见 [ASSETS.md](ASSETS.md)、[DIALOGUE.md](DIALOGUE.md)。
 
+## 准备分发包
+
+构建完成后，在 macOS 执行 `python3 scripts/package_macos.py`。输出在 `releases/prepared/`，包含桌面 ZIP、插件安装 ZIP、SHA256SUMS.txt 和 INSTALL.md；不会上传或安装。桌面包是 `.app + INSTALL.md`，不需要 DMG，agent 可复制到用户 Applications 后启动，详见 [macOS 安装说明](docs/MACOS_INSTALL.md)。当前脚本生成 ad-hoc 签名的测试分发包，不提供 Developer ID 签名或 Apple 公证；正式签名发行需使用另外的签名流程。
+
 ## 开发与发布
+
+GitHub Actions 在推送 `v<桌面版本>` 标签后，使用 macOS arm64 runner 构建应用和插件 ZIP，验证签名及归档，连同校验和、安装说明上传同一 Release。标签必须匹配 `src-tauri/tauri.conf.json`，并提前准备 `docs/releases/v<版本>.md` 发布说明。二进制包不提交到源码分支。
 
 ```sh
 npm test
