@@ -4,7 +4,9 @@
 - 安装后即可生效，无需重启 Codex。安装脚本检查旧 `market-pet@market-pet-local` 是否仍启用；若启用则在写入前停止，要求先停用旧插件，避免重复响应。保留旧缓存，不修改 Hook 信任或用户已关闭的 Hook 状态。
 - 桌宠共享数据目录保持不变，已有大小、透明度和关注股票继续可用；桥接脚本与六类 Hook 的故障隔离入口未改动。
 - 18 项 Python 测试通过，包括首次安装、旧插件停用后安装、旧插件仍启用/状态未知时停止，以及原桥接、设置和缺脚本故障隔离测试。
-- 新包：`releases/KuruPal-Codex-Installer-0.1.5.zip`，校验和见同名 `.sha256`。已验证 ZIP 内清单、目录与所需脚本完整；本次未修改当前用户已安装的旧插件，未做桌宠前端视觉检查。GitHub 同步时 SSH 连接被重置，HTTPS 未配置凭据；发布状态需后续确认。
+- 新包：`releases/KuruPal-Codex-Installer-0.1.5.zip`，校验和见同名 `.sha256`。已验证 ZIP 内清单、目录与所需脚本完整；本次未修改当前用户已安装的旧插件，未做桌宠前端视觉检查。
+- GitHub SSH 重试已恢复，README 和更名代码已同步。最新 Release 为 `plugin-v0.1.5`，包含插件 0.1.5、桌面 0.3.9、SHA256SUMS.txt 和 INSTALL.md；已下载核验远端插件 ZIP 的清单、skill、安装命令和校验和。桌面包与 v0.3.9 完全一致，README 的 `releases/latest` 自动指向新版。
+- 新增 `.github/workflows/plugin-release.yml`：`plugin-v*` 标签触发插件独立发布，运行 Python 测试，下载并校验已有桌面包，再发布组合附件，无需重建桌面或安装应用构建依赖。插件 ZIP 共用 `scripts/package_plugin.py`；完整桌面发布流程仍由 `v*` 标签触发。此次任务 `39411200307` 成功。PV 工程与用户提供的音乐、截图继续仅保留本地。
 
 ## 2026-10-20 · KuruPal 0.3.9 透明度与隐藏
 
