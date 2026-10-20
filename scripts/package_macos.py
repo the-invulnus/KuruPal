@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import zipfile
+from package_plugin import package_plugin
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -18,8 +19,6 @@ def main():
     if sys.platform != 'darwin':
         raise SystemExit('Run on macOS after npm run bundle -- --bundles app')
     version = json.loads((ROOT/'src-tauri/tauri.conf.json').read_text())['version']
-    plugin = ROOT/'codex-plugin-distribution/plugins/kurupal'
-    plugin_version = json.loads((plugin/'.codex-plugin/plugin.json').read_text())['version']
     source = ROOT/'src-tauri/target/release/bundle/macos/KuruPal.app'
     info = plistlib.loads((source/'Contents/Info.plist').read_bytes())
     if info['CFBundleShortVersionString'] != version:
@@ -47,13 +46,7 @@ def main():
         extracted = Path(temp)/'verify'
         run('ditto','-x','-k',str(archive),str(extracted))
         run('codesign','--verify','--deep','--strict',str(extracted/name/'KuruPal.app'))
-    installer_name = f'KuruPal-Codex-Installer-{plugin_version}'
-    installer = output/(installer_name+'.zip')
-    distribution = ROOT/'codex-plugin-distribution'
-    with zipfile.ZipFile(installer,'w',zipfile.ZIP_DEFLATED) as z:
-        for file in sorted(distribution.rglob('*')):
-            if file.is_file() and '__pycache__' not in file.parts and file.name != '.DS_Store':
-                z.write(file,Path(installer_name)/file.relative_to(distribution))
+    installer = package_plugin(output)
     for file in (archive,installer):
         with zipfile.ZipFile(file) as z:
             if z.testzip() is not None: raise SystemExit(f'Corrupt archive: {file}')

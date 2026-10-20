@@ -1,0 +1,78 @@
+name: Release plugin update
+
+on:
+  push:
+    tags: ['plugin-v*']
+
+permissions:
+  contents: read
+
+jobs:
+  plugin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check versions
+        id: versions
+        run: |
+          python3 - <<'PY'
+          import json, os
+          plugin = json.load(open('codex-plugin-distribution/plugins/kurupal/.codex-plugin/plugin.json'))['version']
+          desktop = json.load(open('src-tauri/tauri.conf.json'))['version']
+          assert os.environ['GITHUB_REF_NAME'] == f'plugin-v{plugin}', 'Tag must match plugin version'
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write(f'desktop_tag=v{desktop}\napp=KuruPal-{desktop}-macOS-arm64.zip\n')
+              output.write(f'title=KuruPal {desktop} · Codex 插件 {plugin}\n')
+          PY
+      - name: Test plugin
+        run: |
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          sh -n codex-plugin-distribution/install.command
+      - name: Reuse verified desktop package and build plugin
+        env:
+          DESKTOP_TAG: ${{ steps.versions.outputs.desktop_tag }}
+          APP_ASSET: ${{ steps.versions.outputs.app }}
+        run: |
+          gh release download "$DESKTOP_TAG" --pattern "$APP_ASSET" \
+            --pattern SHA256SUMS.txt --dir releases/prepared
+          python3 - <<'PY'
+          import hashlib, os
+          from pathlib import Path
+          output = Path('releases/prepared')
+          app = output / os.environ['APP_ASSET']
+          checksums = dict(line.split(maxsplit=1)[::-1] for line in (output/'SHA256SUMS.txt').read_text().splitlines())
+          with app.open('rb') as stream:
+              actual = hashlib.file_digest(stream, 'sha256').hexdigest()
+          assert checksums[app.name] == actual, 'Desktop package checksum mismatch'
+          PY
+          python3 scripts/package_plugin.py
+          python3 - <<'PY'
+          import hashlib, shutil
+          from pathlib import Path
+          output = Path('releases/prepared')
+          archives = sorted(output.glob('*.zip'))
+          assert len(archives) == 2, 'Expected exactly one desktop and one plugin archive'
+          lines = []
+          for file in archives:
+              with file.open('rb') as stream:
+                  lines.append(f'{hashlib.file_digest(stream, "sha256").hexdigest()}  {file.name}\n')
+          (output/'SHA256SUMS.txt').write_text(''.join(lines))
+          shutil.copy2('docs/MACOS_INSTALL.md', output/'INSTALL.md')
+          PY
+      - name: Publish desktop and updated plugin
+        env:
+          RELEASE_TITLE: ${{ steps.versions.outputs.title }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            releases/prepared/*.zip \
+            releases/prepared/SHA256SUMS.txt \
+            releases/prepared/INSTALL.md \
+            --verify-tag --draft --title "$RELEASE_TITLE" \
+            --notes-file "docs/releases/$GITHUB_REF_NAME.md"
+          gh release edit "$GITHUB_REF_NAME" --draft=false --latest
